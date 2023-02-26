@@ -1,0 +1,11 @@
+name: build-github-page 
+on:
+  push:
+    branches:
+      - main
+job:
+  deploy-mkdocs:
+    runs-on: ubuntu-latest
+    steps:
+      run: pip install mkdocs-material
+      run: mkdocs gh-deploy --force
