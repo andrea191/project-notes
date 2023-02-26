@@ -1,0 +1,45 @@
+site_name: Notes
+site_url: https://andrea191.github.io/
+dev_addr: '0.0.0.0:8000'
+repo_url: https://github.com/andrea191/andrea191.github.io
+repo_name: andrea191/andrea191.github.io
+copyright: Copyright &copy; 2023 Andrea191
+nav:
+  - Home: index.md
+  - Network: 
+    - network/note1.md
+    - Note 2: network/note2.md
+  - About: about.md
+markdown_extensions:
+  - toc:
+      permalink: "#"
+  - abbr
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+theme:
+  name: material
+  language: en
+  features:
+#    - header.autohide
+#    - navigation.footer
+    - navigation.tabs
+#    - navigation.tabs.sticky
+    - navigation.sections
+# experimental    - navigation.path    
+  palette: 
+    # Palette toggle for light mode
+    - scheme: slate
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: default
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
