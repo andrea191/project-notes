@@ -4,7 +4,7 @@ on:
     branches:
       - main
 job:
-  deploy_mkdocs:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       uses: actions/checkout@v3
